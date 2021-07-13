@@ -21,7 +21,6 @@ var time = moment().format("H")
 var date = moment().format("ddd MMM Do, YYYY");
 $("#currentDay").text(date);
 
-
 entrybutton1.on('click', '.button1', entry1)
 entrybutton2.on('click', '.button2', entry2)
 entrybutton3.on('click', '.button3', entry3)
@@ -134,7 +133,7 @@ function colorchange1 () {
     if (time === 9) {
         $('textarea[name="entry1"]').addClass('present')
     }
-    else if ( time >= 10 && time <= 17) {
+    else if ( time < 9) {
         $('textarea[name="entry1"]').addClass('future')
     }
     else {
@@ -148,7 +147,7 @@ function colorchange2 () {
     if (time === 10) {
         $('textarea[name="entry2"]').addClass('present')
     }
-    else if ( time >= 11 && time <= 17) {
+    else if ( time < 10) {
         $('textarea[name="entry2"]').addClass('future')
     }
     else {
@@ -162,7 +161,7 @@ function colorchange3 () {
     if (time === 11) {
         $('textarea[name="entry3"]').addClass('present')
     }
-    else if ( time >= 12 && time <= 17) {
+    else if ( time < 11) {
         $('textarea[name="entry3"]').addClass('future')
     }
     else {
@@ -176,7 +175,7 @@ function colorchange4 () {
     if (time === 12) {
         $('textarea[name="entry4"]').addClass('present')
     }
-    else if ( time >= 13 && time <= 17) {
+    else if ( time < 12) {
         $('textarea[name="entry4"]').addClass('future')
     }
     else {
@@ -190,7 +189,7 @@ function colorchange5 () {
     if (time === 13) {
         $('textarea[name="entry5"]').addClass('present')
     }
-    else if ( time >= 13 && time <= 17) {
+    else if ( time < 13) {
         $('textarea[name="entry5"]').addClass('future')
     }
     else {
@@ -204,7 +203,7 @@ function colorchange6 () {
     if (time === 14) {
         $('textarea[name="entry6"]').addClass('present')
     }
-    else if ( time >= 15 && time <= 17) {
+    else if ( time < 14) {
         $('textarea[name="entry6"]').addClass('future')
     }
     else {
@@ -218,7 +217,7 @@ function colorchange7 () {
     if (time === 15) {
         $('textarea[name="entry7"]').addClass('present')
     }
-    else if ( time >= 16 && time <= 17) {
+    else if ( time < 15) {
         $('textarea[name="entry7"]').addClass('future')
     }
     else {
@@ -232,7 +231,7 @@ function colorchange8 () {
     if (time === 16) {
         $('textarea[name="entry8"]').addClass('present')
     }
-    else if ( time === 17) {
+    else if ( time < 16) {
         $('textarea[name="entry8"]').addClass('future')
     }
     else {
@@ -246,7 +245,7 @@ function colorchange9 () {
     if (time === 17) {
         $('textarea[name="entry9"]').addClass('present')
     }
-    else if (time >= 9 && time <= 16) {
+    else if (time < 17) {
         $('textarea[name="entry9"]').addClass('future')
     }
     else {
